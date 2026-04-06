@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 207.0 s <<< FAILURE! -- in runner.TestRunner
+runner.TestRunner.runScenario["Verify login with multiple credentials", "Login functionality on DemoQA"](1) -- Time elapsed: 103.4 s <<< FAILURE!
+java.lang.AssertionError: Login should be successful expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.OutlineLoginSteps.user_should_see_result(OutlineLoginSteps.java:39)
+	at ✽.user should see "Login Successful"(file:///F:/Capgemini/SeleniumGrid/selenium-grid-demo/src/test/resources/features/OutlineLogin.feature:7)
+
